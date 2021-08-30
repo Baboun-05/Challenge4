@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    /*layout*/
+    /*The designs were created to the following widths:*/
+    --mobile: 375px;
+    --desktop: 14440px;
+    /* color Primary*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* color Neutral*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    /* body copy*/
+    --font-size-paragraph : 16px;
+    /* font*/
+    --Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display);
+    --Weights: 500, 700, 900;
+}
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+#contener {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+#danse {
+    border-radius: 10px 10px 0 0;
+}
+h1 {
+    text-align: center;
+    color: var(--Dark-blue);
+    margin-bottom: auto;
+    font-weight: 900;
+}
+#text-pres {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 300px;
+    text-align: center;
+    color: var(--Desaturated-blue);
+}
+.wrapper {
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "a d c";
+}
+.one {
+    grid-area: a;
+    margin-left: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.two {
+    grid-area: b;
+    margin: 0;
+    color: var(--Dark-blue);
+    font-weight: bolder;
+    font-weight: 900;
+}
+.three {
+    grid-area: d;
+    margin: 0;
+    color: var(--Desaturated-blue);
+}
+.four {
+    padding-top: 10px;
+    grid-area: c;
+    margin: 0;
+    font-weight: bolder;
+}
+button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #6000E3;
+    color: white;
+    font-weight: bolder;
+}
+button:hover {
+    background-color: #8A30F3;
+    cursor: pointer;
+}
+.cancel {
+    text-align: center;
+    margin-bottom: 10%;
+    text-decoration: none;
+}
+.cancel:hover {
+    text-decoration: underline;
+}
